@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Gra w wisielca</title>
+	<script src="app.js"></script>
+	<script>
+
+
+function setCookie(name,value,expires){
+   document.cookie = name + "=" + value + ((expires==null) ? "" : ";expires=" + expires.toGMTString());
+  // alert(document.cookie);
+}
+
+var expirydate=new Date();
+expirydate.setTime( expirydate.getTime()+(100*60*60) );
+setCookie('cookiename','cookiedata',expirydate);
+
+function sgCookie() {
+  document.cookie = "name=oeschger";
+  document.cookie = "favorite_food=tripe";
+  //alert(document.cookie);
+}
+function training(nazwa){
+console.log(nazwa);
+}
+debugger;
+
+sgCookie();
+training("pies");
+// wyświetli: name=oeschger;favorite_food=tripe
+	</script>
+	</head>
+<body>
+<p>Give the quote to guess:</p>
+<form action="szubienica.html" id="formular">
+<input type="text" name = "toGuess">
+
+<button>butt</button>
+</form>
+
+<!--
+<form id="formular" ">
+ <input type="text" name="toGuess" ><br>
+ <input type="submit" value="Submit"  >
+</form>
+-->
+
+<a href = "szubienica.html> Go to the play ></a>
+
+</body>
+
+</html>
