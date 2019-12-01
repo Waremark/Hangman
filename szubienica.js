@@ -128,14 +128,14 @@ var trafiona = false;
 	//wygrana
 	if (haslo == haslo1){
 		end.play().loop;
-	document.getElementById("alfabet").innerHTML  = "Tak jest! Podano prawidłowe hasło: "+haslo+'<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
+	document.getElementById("alfabet").innerHTML  = "That's correct! You've guessed the pass: "+haslo+'<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
 
 	}
 	
 	//przegrana
 	if (ile_skuch>=9) {
 		badEnd.play();
-	document.getElementById("alfabet").innerHTML  = "Przegrana! Prawidłowe hasło: "+haslo+'<br />   <br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
+	document.getElementById("alfabet").innerHTML  = "You've lost! The solution is: "+haslo+'<br />   <br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
 	
 	}
 }
