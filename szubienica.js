@@ -125,14 +125,14 @@ var trafiona = false;
 		document.getElementById("szubienica").innerHTML = '<img src="'+obraz+'" alt="" />';
 	}
 	
-	//wygrana
+	//wygrana gra
 	if (haslo == haslo1){
 		end.play().loop;
 	document.getElementById("alfabet").innerHTML  = "Great! You've guessed the pass: "+haslo+'<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
 
 	}
 	
-	//przegrana
+	//przegrana gra
 	if (ile_skuch>=9) {
 		badEnd.play();
 	document.getElementById("alfabet").innerHTML  = "You've lost! The solution is: "+haslo+'<br />   <br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
