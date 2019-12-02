@@ -128,7 +128,7 @@ var trafiona = false;
 	//wygrana
 	if (haslo == haslo1){
 		end.play().loop;
-	document.getElementById("alfabet").innerHTML  = "That's correct! You've guessed the pass: "+haslo+'<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
+	document.getElementById("alfabet").innerHTML  = "Great! You've guessed the pass: "+haslo+'<br /><br /><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
 
 	}
 	
